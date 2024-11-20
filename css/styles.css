@@ -1,0 +1,110 @@
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Set consistent body styles */
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    color: white;
+    background-color: #100726;
+}
+
+/* Remove default anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure media elements are responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default form styles */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Remove animations and transitions for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Set base font size for accessibility */
+html {
+    font-size: 100%;
+    /* 16px */
+}
+
+/* Set default button styles */
+button {
+    cursor: pointer;
+    background: none;
+}
+
+/* Normalize table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Hide scrollbars in all browsers except Firefox */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.page{
+    margin: 30px auto;
+    width: 80%;
+}
+
+.photos{
+    width: 300px;
+    height: 300px;
+    
+}
+
+.photos img{
+    width: 100%;
+    height: 100%;
+}
+
+.section{
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
