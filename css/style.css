@@ -1,0 +1,589 @@
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Set consistent body styles */
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    color: white;
+    background-color: #100726;
+}
+
+/* Remove default anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure media elements are responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default form styles */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Remove animations and transitions for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Set base font size for accessibility */
+html {
+    font-size: 100%;
+    /* 16px */
+}
+
+/* Set default button styles */
+button {
+    cursor: pointer;
+    background: none;
+}
+
+/* Normalize table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Hide scrollbars in all browsers except Firefox */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Flex Section Starts Here */
+
+.start {
+    align-items: start;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* landing page section here */
+
+.landing-page {
+    background: url(../images/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+/* navbar section starts here */
+
+.navbar {
+    height: 20vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.list {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-transform: uppercase;
+}
+
+
+/* Home section starts here  */
+
+/* Show reel code here  */
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.section {
+    margin-top: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.follow-div {
+    width: 100%;
+    height: 400px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background: url("../images/banner.png");
+    background-size: contain;
+}
+
+.follow {
+    padding: 35px;
+    background-color: white;
+}
+
+.follow-heading {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    color: black;
+}
+
+.follow-hashtag {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    color: #d71362;
+    margin-bottom: 1.5rem;
+}
+
+.heading-2 {
+    font-size: 40px;
+    line-height: 4px;
+}
+
+.heading-1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.article {
+    width: 500px;
+    font-size: "Roboto";
+    color: #a5a5a5;
+    margin: 50px 0px 10px 0px;
+}
+
+.article2 {
+    font-family: "Roboto";
+    color: #a5a5a5;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+
+.button {
+    background-color: #d81362;
+    color: white;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    font-family: "Roboto";
+}
+
+.between {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.around {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 460px;
+    height: 280px;
+    padding: 25px;
+    background-color: #1d1137;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid #311e5a;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.stuname {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.stuimage {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating {
+    font-size: 20px;
+}
+
+.heading-div {
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+/* Events Section Starts Here */
+
+.events-div {
+    background-color: #d81362;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.r-events-width {
+    width: 70%;
+}
+
+.u-events-width{
+    width: 35%;
+}
+
+.events-box {
+    height: 150px;
+    border: 40px solid #0f0e3e;
+    position: relative;
+}
+
+.event-date {
+    font-size: 80px;
+    font-family: "raleway";
+    font-weight: 900;
+    position: absolute;
+    top: -65px;
+    left: -20px;
+}
+
+.event-year {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.event-place {
+    font-size: 20px;
+    font-family: "raleway";
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    top: 40px;
+    left: -32px;
+}
+
+.events-heading {
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: "system-ui";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Forem Section Starts Here */
+
+.form-div {
+    width: 50%;
+}
+
+.contect-me-div {
+    width: 80%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    column-gap: 12px;
+    background-color: #1d1137;
+    padding: 25px;
+    color: #4f3980;
+    border: 1px solid #311e5a;
+}
+
+.inp-div {
+    margin-bottom: 18px;
+}
+
+.inp-label {
+    display: block;
+    font-weight: 600;
+}
+
+.input {
+    height: 45px;
+    padding: 6px 12px;
+    width: 100%;
+}
+
+/* Contect-div Starts here */
+
+.contect-div {
+    color: white;
+    margin: 50px 0px 0px 50px;
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+.contect-heading {
+    font-size: 25px;
+    font-family: "raleway";
+    margin-bottom: 18px;
+}
+
+.contect-info {
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 23px;
+}
+
+/* footer section starts here */
+
+.footer {
+    width: 100%;
+    background-color: #100726;
+    font-family: "Raleway";
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.icon-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+    padding: 35px 0px;
+    color: #9996a3;
+}
+
+#mobile-icon {
+    display: none;
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    
+    .list{
+        display: none;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    #mobile-icon {
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .heading-1 {
+        font-size: 35px;
+    }
+
+    .heading-2 {
+        font-size: 25px;
+    }
+
+    .space-between {
+        flex-direction: column;
+    }
+
+    .form-div {
+        width: 100%;
+    }
+
+    .contect-me-div {
+        width: 90%;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    .cards {
+        width: 49%;
+        height: 100%;
+        padding: 20px;
+        row-gap: 10px;
+    }
+
+    .stuname {
+        font-size: 15px;
+    }
+
+    .follow-div {
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .follow {
+        padding: 30px;
+    }
+
+    .follow-heading {
+        font-size: 22px;
+    }
+
+    .follow-hashtag {
+        font-size: 20px;
+    }
+
+    .article2 {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .list {
+        display: none;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    #mobile-icon {
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .heading-1 {
+        font-size: 35px;
+    }
+
+    .heading-2 {
+        font-size: 25px;
+    }
+
+    .space-between {
+        flex-direction: column;
+    }
+
+    .form-div {
+        width: 100%;
+    }
+
+    .contect-me-div {
+        width: 90%;
+    }
+
+    .article {
+        width: auto;
+    }
+
+    .cards {
+        width: 49%;
+        height: 100%;
+        padding: 20px;
+        row-gap: 10px;
+    }
+
+    .stuname {
+        font-size: 15px;
+    }
+
+    .follow-div {
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .follow {
+        padding: 30px;
+    }
+
+    .follow-heading {
+        font-size: 22px;
+    }
+
+    .follow-hashtag {
+        font-size: 20px;
+    }
+
+    .article2 {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .sm-col {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .r-events-width,.u-events-width {
+        width: 100%;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+}
